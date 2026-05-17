@@ -27,13 +27,13 @@ public class Worker extends User {
 
     @Override
     public void showInfo() {
-        double rate = (completeCount * 1.0) / assignedCount;
+        double rate = (double) completeCount  / assignedCount * 100;
         System.out.printf("""
                 [작업자 정보]
                 작업자명: %s
                 할당 받은 업무량: %d
                 완수한 업무량: %d
-                작업 진행도: %2f
+                작업 진행도: %.2f
                 """, super.getName(), assignedCount, completeCount, rate);
     }
 }
