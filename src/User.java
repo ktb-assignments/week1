@@ -2,13 +2,13 @@ public abstract class User {
 
     private String name;
 
-    public User (String name){
+    public User(String name) {
         this.name = name;
     }
 
     public String getName() {
-         return this.name;
-     }
+        return this.name;
+    }
 
 
     public void showInfo() {
